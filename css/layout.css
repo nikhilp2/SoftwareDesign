@@ -1,0 +1,26 @@
+﻿#top {
+	width: 780px;
+	height: 148px;
+}
+#main {
+}
+#navbox {
+	background-color: #644E5B;
+	border: thin solid #000000;
+	width: 150px;
+	margin: 10px;
+	float: left;
+}
+#content {
+	width: 585px;
+	margin-top: 10px;
+	float: right;
+}
+#container {
+	background-color: #FFFFFF;
+	margin-right: auto;
+	margin-left: auto;
+}
+#content2 {
+	padding: 10px;
+}

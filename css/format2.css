@@ -1,0 +1,42 @@
+﻿.style3 {
+	text-decoration: none;
+	text-align: center;
+}
+body {
+	font-family: "Arial Rounded MT Bold";
+}
+#navbottom {
+	background-color: #644E5B;
+	padding: 10px;
+}
+a {
+	color: #000000;
+}
+a:active {
+	color: #FFFF00;
+}
+a:hover {
+	color: #FFFF00;
+}
+ul {
+	padding: 0px;
+	margin: 0px;
+}
+li {
+	font-family: Garamond;
+	font-size: large;
+	font-weight: bold;
+	list-style-type: none;
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.style1 {
+	text-decoration: none;
+}
+.clear {
+	clear: both;
+}
+.style2 {
+	margin-top: 10px;
+}

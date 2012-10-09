@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="CustomerMasterPage.master.cs" Inherits="CustomerMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1" runat="server">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Sun Devil Inc</title>
+<style type="text/css">
+a:active {
+	color: #00FFFF;
+}
+a:hover {
+	color: #00FFFF;
+}
+</style>
+<link href="css/main2.css" rel="stylesheet" type="text/css" />
+<asp:ContentPlaceHolder ID="headers" runat="server">
+</asp:ContentPlaceHolder>
+</head>
+
+<body id="body" runat="server" style="margin: 0">
+
+<form id="form2" runat="server">
+
+<div id="container" runat="server" style="">
+<div id="top" style="height: 92px; width: 849px;">
+	<img alt="logo" height="95" src="images/logo.gif" width="851" /></div>
+	<div id="Header" runat="server"></div>
+	
+	
+	<div id="main" style="width: 851px"> <div id="navbox">
+		<ul id="links" runat="server">
+        <asp:LinkButton ID="SignOUtLNK" runat="server" class="style1" onclick="SignOUtLNK_Click">Sign Out</asp:LinkButton>
+		</ul>
+		</div>
+	
+	    <asp:ContentPlaceHolder ID="ticker" runat="server">
+        
+        </asp:ContentPlaceHolder>
+	    <br />
+	
+		<div id="content" class="style2" style="width: 664px">
+        <asp:ContentPlaceHolder ID="content" runat="server">
+        
+        </asp:ContentPlaceHolder>
+	</div></div>
+	
+			<br />
+	
+	<div id="content2" class="clear"></div>
+    <div id="footer" runat="server"></div>
+		
+	<div id="navbottom" style="width: 832px">
+	<p class="style3">
+                    <a href="home.aspx"><span style="font-size: 11pt">Home</span></a><span style="font-size: 11pt">
+                        | </span>
+                    <a href="CustomerRegistration.aspx"><span style="font-size: 11pt">Sign Up</span></a><span style="font-size: 11pt">
+                        | </span>
+                    <a href="CustomerLogin.aspx"><span style="font-size: 11pt">Sign On</span></a><span style="font-size: 11pt"> 
+                        | </span>
+                         <a href="ApplyCoupon.aspx"><span style="font-size: 11pt">Apply Coupon</span></a><span style="font-size: 11pt">
+                        | </span>
+                          <a href="CheckStock.aspx"><span style="font-size: 11pt">Check Stock</span></a><span style="font-size: 11pt"> 
+                        | </span>
+                         <a href="DisplayBooks.aspx"><span style="font-size: 11pt">View Books</span></a><span style="font-size: 11pt"> 
+                        | </span>
+                         <a href="DisplayLaptops.aspx"><span style="font-size: 11pt">View Laptops</span></a><span style="font-size: 11pt"> 
+                        | </span>
+                         <a href="DisplayCart.aspx"><span style="font-size: 11pt">Add Cart</span></a><span style="font-size: 11pt"> 
+                         </span>
+                             </p>
+        <p class="style3">
+                    <span>
+                    Copyright © 2011. All Rights Reserved </span>
+                </p>
+
+	</div>
+
+	</div>
+
+		
+	
+	</form>
+
+		
+	
+	</body>
+
+</html>

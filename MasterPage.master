@@ -1,0 +1,111 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1" runat="server">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Sun Devil Inc</title>
+<style type="text/css">
+a:active {
+	color: #00FFFF;
+}
+a:hover {
+	color: #00FFFF;
+}
+</style>
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<asp:ContentPlaceHolder ID="headers" runat="server">
+</asp:ContentPlaceHolder>
+</head>
+
+<body style="margin: 0; background-color: #FFFFFF">
+
+<form id="form2" runat="server">
+
+<div id="container">
+<div id="top" style="height: 92px; width: 849px;">
+	<img alt="logo" height="95" src="images/logo.gif" width="851" /></div>
+	
+	
+	
+	<div id="main" style="width: 851px"> <div id="navbox">
+		<ul>
+			<li><a href="home.aspx" class="style1">Home</a></li>
+            <li><a href="register.aspx" class="style1">Registration</a></li>
+            <li><a href="login.aspx" class="style1">Login</a></li>
+            <li><asp:LinkButton ID="logOutLink" class="style1" runat="server" onclick="logOutLink_Click">Log Out</asp:LinkButton></li>
+            <li><a href="ViewObjects.aspx" class="style1">View Objects</a></li>
+            <li><a href="InsertObject.aspx" class="style1">Add Object</a></li>
+            <li><a href="ViewFields.aspx" class="style1">View Fields</a></li>
+            <li><a href="InsertField.aspx" class="style1">Add Field</a></li>
+            <li><a href="ViewData.aspx" class="style1">View Data</a></li>
+            <li><a href="InsertData.aspx" class="style1">Add Data</a></li>
+            <li><a href="AddWebService.aspx" class="style1">Add Web Service</a></li>
+            <li><a href="CustomizeWorkFlow.aspx" class="style1">Customize Workflow</a></li>
+            <li><a href="ProcessOrder.aspx" class="style1">Process Order</a></li>
+            <li><a href="CustomizeGUI.aspx" class="style1">Customize GUI</a></li>
+            <li><a href="AddImage.aspx" class="style1">Add Image</a></li>
+            <li><a href="AddLinks.aspx" class="style1">Add Links</a></li>
+            <li><a href="CustomizeLinks.aspx" class="style1">Customize Sidebar</a></li>
+            <li><a href="CreateTenant.aspx" class="style1">New Tenant Sign Up</a></li>
+		</ul>
+		</div>
+	
+	    <asp:ContentPlaceHolder ID="ticker" runat="server">
+        
+        </asp:ContentPlaceHolder>
+	    <br />
+	
+		<div id="content" class="style2" style="width: 664px">
+        <asp:ContentPlaceHolder ID="content" runat="server">
+        
+        </asp:ContentPlaceHolder>
+	</div></div>
+	
+			<br />
+	
+	<div id="content2" class="clear"></div>
+		
+	<div id="navbottom" style="width: 832px">
+	<p class="style3">
+                    <a href="home.aspx"><span style="font-size: 11pt">Home</span></a><span style="font-size: 11pt">
+                        | </span>
+                    <a href="register.aspx"><span style="font-size: 11pt">Register</span></a><span style="font-size: 11pt">
+                        | </span>
+                    <a href="login.aspx"><span style="font-size: 11pt">Login</span></a><span style="font-size: 11pt"> 
+                        | </span>
+                         <a href="ViewObjects.aspx"><span style="font-size: 11pt">View Object</span></a><span style="font-size: 11pt">
+                        | </span>
+                    <a href="InsertObject.aspx"><span style="font-size: 11pt">Add Objects</span></a><span style="font-size: 11pt"> 
+                        | </span>
+                    <a href="ViewFields.aspx"><span style="font-size: 11pt">View Fields</span></a><span style="font-size: 11pt"> 
+                        | </span>
+                    <a href="InsertField.aspx"><span style="font-size: 11pt">Add Fields</span></a><span style="font-size: 11pt"> 
+                        | </span>  
+                    <a href="ViewData.aspx"><span style="font-size: 11pt">View Data</span></a><span style="font-size: 11pt"> 
+                        | </span>
+                    <a href="InsertData.aspx"><span style="font-size: 11pt">Add Data</span></a><span style="font-size: 11pt"> 
+                        | </span>
+                    <a href="AddWebService.aspx"><span style="font-size: 11pt">Add Web Service</span></a><span style="font-size: 11pt"> 
+                         </span>
+                          </p>
+        <p class="style3">
+                    <span>
+                    Copyright © 2011. All Rights Reserved </span>
+                </p>
+
+	</div>
+
+	</div>
+
+		
+	
+	</form>
+
+		
+	
+	</body>
+
+</html>

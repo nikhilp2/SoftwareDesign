@@ -1,0 +1,14 @@
+CREATE TABLE `users` (
+  `userID` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(20) NOT NULL,
+  `password` varchar(30) NOT NULL,
+  `firstname` varchar(10) NOT NULL,
+  `lastname` varchar(10) NOT NULL,
+  `address` varchar(200) NOT NULL,
+  `city` varchar(10) NOT NULL,
+  `state` varchar(20) NOT NULL,
+  `zip` int(5) NOT NULL,
+  PRIMARY KEY  (`userID`),
+  UNIQUE KEY `username` (`username`)
+);
+
